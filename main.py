@@ -2,7 +2,9 @@ from flask import Flask, render_template, jsonify, request
 from flask_pymongo import PyMongo
 import openai
 import os
-openai.api_key = os.getenv(api)
+from dotenv import load_dotenv
+load_dotenv()
+openai.api_key = os.getenv('open_ai')
 app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb+srv://phantomgoddev:vedantS.A2009@cluster0.gyub7ut.mongodb.net/chatgpt"
 mongo = PyMongo(app)
