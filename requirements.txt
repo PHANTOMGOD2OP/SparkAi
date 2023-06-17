@@ -23,5 +23,5 @@ python-dotenv==0.21.1
 requests==2.30.0
 tqdm==4.65.0
 urllib3==2.0.2
-Werkzeug==2.3.4
+Werkzeug==2.2.3
 yarl==1.9.2
