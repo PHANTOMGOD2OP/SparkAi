@@ -43,4 +43,4 @@ def qa():
         
     return jsonify(data)
 
-app.run(host = 3000, port=5001)
+app.run(host = "0.0.0.0", port=5001)
